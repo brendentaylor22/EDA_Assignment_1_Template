@@ -1,0 +1,29 @@
+---
+output:
+  bookdown::pdf_book:
+    keep_tex: yes
+    includes:
+      in_header: "Preamble.tex"
+      before_body: "Title.tex"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(tinytex.verbose = TRUE) #Helps with debugging by outputting full error messages from tinytex
+
+#You may still need to install tinytex, if you haven't already. This can take quite a while:
+
+#install.packages("devtools")
+#devtools::install_github("yihui/tinytex")
+#tinytex:::install_prebuilt()
+
+#If you haven't installed bookdown:
+#install.packages()
+```
+
+\newpage
+# Chapter Heading
+
+```{r}
+
+```
